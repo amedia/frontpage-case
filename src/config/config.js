@@ -79,13 +79,6 @@ const conf = convict({
     arg: 'port',
   },
 
-  httpAccessLogLevel: {
-    doc: 'Enable logging of requests (accessLog)',
-    format: String,
-    default: 'debug',
-    env: 'HTTP_ACCESS_LOG',
-  },
-
   logLevel: {
     doc: 'Which level the console transport log should log at',
     format: String,
@@ -113,20 +106,6 @@ const conf = convict({
     format: String,
     default: 'dev',
     env: 'CLUSTER_NAME',
-  },
-
-  influxdbHost: {
-    doc: 'Hostname for influxdb',
-    format: String,
-    default: 'localhost',
-    env: 'INFLUXDB_HOST',
-  },
-
-  influxdbPort: {
-    doc: 'Port for influxdb',
-    format: 'port',
-    default: 8086,
-    env: 'INFLUXDB_PORT',
   },
 
   servicesHostname: {
