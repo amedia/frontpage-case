@@ -1,4 +1,4 @@
-# TEMPLATE_APPNAME
+# frontpage-case
 
 An initial start point for node.js based applications.
 
@@ -17,7 +17,7 @@ This is a template repository. Use this to create new repositories.
 1. Set correct port in `src/config/config.js`
 1. Run `npm install`
 1. Start your server with `npm run dev-start`
-1. Try to go to http://127.0.0.1:8080/api/TEMPLATE_APPNAME/v1/example
+1. Try to go to http://127.0.0.1:8080/api/frontpage-case/v1/example
 1. Edit the routes to your likings in `src/routes/router.js`
 1. Create an awesome app
 

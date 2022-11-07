@@ -16,17 +16,17 @@ const eikVersion = eikJson.version;
 const js = isDevelopment
   ? [`${manifestHost}${basePath}/assets/example.js`]
   : [
-      `https://assets.acdn.no/pkg/TEMPLATE_APPNAME/${eikVersion}/example/example.js`,
+      `https://assets.acdn.no/pkg/frontpage-case/${eikVersion}/example/example.js`,
     ];
 
 const css = isDevelopment
   ? [`${manifestHost}${basePath}/assets/example.css`]
   : [
-      `https://assets.acdn.no/pkg/TEMPLATE_APPNAME/${eikVersion}/example/example.css`,
+      `https://assets.acdn.no/pkg/frontpage-case/${eikVersion}/example/example.css`,
     ];
 
 export default {
-  id: 'TEMPLATE_APPNAME',
+  id: 'frontpage-case',
   version: '0.1.0',
   name: 'Template Name',
   title: 'Template Title',

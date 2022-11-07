@@ -28,7 +28,7 @@ const conf = convict({
   name: {
     doc: 'Name of the application',
     format: String,
-    default: 'TEMPLATE_APPNAME',
+    default: 'frontpage-case',
   },
 
   serverType: {
@@ -62,7 +62,7 @@ const conf = convict({
   contextPath: {
     doc: 'Context path for the application. Serves as a prefix for the paths in all URLs',
     format: String,
-    default: '/TEMPLATE_APPNAME',
+    default: '/frontpage-case',
   },
 
   basePath: {

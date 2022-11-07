@@ -1,8 +1,4 @@
-owner: Infrastruktur
-public-channel: "#team-sre"
-private-channel: "#team-sre-secure"
-name: template-node-app
-system: Byggesystem
-availability: low
-confidentiality: none
-integrity: false
+# TODO Please update this file with owner/team and Slack channels for notifications
+owner:
+#public-channel: "#team-TODO"
+#private-channel: "#team-TODO"
