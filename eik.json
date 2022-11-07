@@ -1,9 +1,0 @@
-{
-  "name": "frontpage-case",
-  "version": "0.1.0",
-  "server": "https://assets.acdn.no",
-  "files": {
-    "example-js": "./public/example.js",
-    "example-css": "./public/example.css"
-  }
-}
