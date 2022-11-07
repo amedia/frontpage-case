@@ -1,0 +1,18 @@
+node_modules
+gh-pages
+config/local.json
+.DS_Store
+.idea
+.idea/**/*
+*.iml
+*.log
+*.tgz
+*.sock
+tmp/**/*
+# Amedia environment override
+.nyc_output
+config/assets.json
+# Jest
+coverage
+# Remove this if we ever decide to use editorconfigs
+.editorconfig

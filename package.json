@@ -1,0 +1,43 @@
+{
+  "name": "TEMPLATE_APPNAME",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An initial start point for node.js based applications",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amedia/template-node-app"
+  },
+  "license": "UNLICENSED",
+  "author": "Amedia",
+  "type": "module",
+  "main": "./src/server.js",
+  "scripts": {
+    "build": "echo \"Info: no build script specified\" && exit 0",
+    "dev-debug": "nodemon -e \"js html css json\" --listen=0.0.0.0:8080 --no-lazy src/server.js",
+    "dev-start": "nodemon -e \"js html css json\" src/server.js",
+    "lint": "kragl lint",
+    "lint-fix": "kragl lint --fix",
+    "format": "kragl format",
+    "start": "node src/server.js",
+    "test": "kragl jest"
+  },
+  "dependencies": {
+    "@amedia/atomizer-header": "3.1.2",
+    "@amedia/create-component": "2.4.0",
+    "@amedia/metrics": "1.2.2",
+    "@amedia/node-log": "2.0.1",
+    "compression": "1.7.4",
+    "convict": "6.2.3",
+    "cors": "2.8.5",
+    "dnscache": "1.0.2",
+    "express": "4.18.2",
+    "pino-http": "8.2.1",
+    "verror": "1.10.1"
+  },
+  "devDependencies": {
+    "@amedia/kragl": "1.2.2",
+    "@amedia/kragl-jest": "1.1.0",
+    "nodemon": "2.0.20"
+  }
+}

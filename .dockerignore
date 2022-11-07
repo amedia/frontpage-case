@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# Allow files and directories
+!/config
+!/node_modules
+!/public
+!/src
+!/eik.json
+!/package.json

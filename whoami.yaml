@@ -1,0 +1,8 @@
+owner: Infrastruktur
+public-channel: "#team-sre"
+private-channel: "#team-sre-secure"
+name: template-node-app
+system: Byggesystem
+availability: low
+confidentiality: none
+integrity: false

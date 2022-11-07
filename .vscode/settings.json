@@ -1,0 +1,13 @@
+{
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "prettier.disableLanguages": ["vue", "js"],
+  "[javascript]": {
+    "editor.detectIndentation": true,
+    "editor.formatOnSave": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
