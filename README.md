@@ -15,7 +15,13 @@ Det første du må gjøre er å sette opp miljøet.
 
 I filen [src/views/preview.view.js](src/views/preview.view.js) vil du se to [custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components). Custom elementet `<amedia-include>` er en klient som lar deg inkludere Amedia Components. Attributtet `manifest` er url'en til komponentens manifest. Eventuelle parametre sendes inn med attributter som prefikset med `param-`. Her ser du at den første peker til en header-komponent som skal ha parameteret `publication`. 
 
-Den andre komponenten har manifestet [http://localhost:8080/frontpage-case/manifest](http://localhost:8080/frontpage-case/manifest). Hvis du ser i manifestet, ser du at det referes til urlTemplate og til css/js-filer. urlTemplate er en url som leveres av denne serveren og som du kan finne definert i (src/routes/router.js)[src/routes/router.js]. Javascript og CSS-filen finner du i mappen `public`. Du skal nå endre denne komponenten slik at den henter de siste publiserte sakene på en publikasjon via [https://services.api.no/api/acpcomposer/v1.1/search/content/?publicationDomain=www.ba.no&sort=lastPublishedDate&types=story](https://services.api.no/api/acpcomposer/v1.1/search/content/?publicationDomain=www.ba.no&sort=lastPublishedDate&types=story) og tegner ut en forside med bilder og tittel fra sakene. Du kan bruke bildet som ligger under `fields.versions.large` i JSON-objektet. 
+Den andre komponenten har manifestet [http://localhost:8080/frontpage-case/manifest](http://localhost:8080/frontpage-case/manifest). Hvis du ser i manifestet, ser du at det referes til urlTemplate og til css/js-filer. 
+
+`urlTemplate` er en url som leveres av denne serveren og som du kan finne definert i (src/routes/router.js)[src/routes/router.js]. 
+
+Javascript og CSS-filen finner du i mappen `public`. 
+
+Du skal nå endre denne komponenten slik at den henter de siste publiserte sakene på en publikasjon via [https://services.api.no/api/acpcomposer/v1.1/search/content/?publicationDomain=www.ba.no&sort=lastPublishedDate&types=story](https://services.api.no/api/acpcomposer/v1.1/search/content/?publicationDomain=www.ba.no&sort=lastPublishedDate&types=story) og tegner ut en forside med bilder og tittel fra sakene. Du kan bruke bildet som ligger under `fields.versions.large` i JSON-objektet. 
 
 Preview-routen i serveren skal endres slik at den tar publikasjonen (f.eks. www.ba.no) som query-parameter og lar deg dermed velge hvilken forside du skal se.
 
