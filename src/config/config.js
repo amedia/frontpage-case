@@ -68,7 +68,7 @@ const conf = convict({
   basePath: {
     doc: 'The route the application is served on. This is the route the end user access in the browser',
     format: String,
-    default: `/api/${pckage.name}/v1`,
+    default: `/${pckage.name}`,
   },
 
   httpServerPort: {
@@ -129,18 +129,11 @@ const conf = convict({
     env: 'INFLUXDB_PORT',
   },
 
-  manifestHost: {
-    doc: 'Host to add to manifests',
+  servicesHostname: {
+    doc: 'Services host',
     format: String,
-    default: 'http://localhost:8080', // Change this to your port
-    env: 'MANIFEST_HOST',
-  },
-
-  manifestEnv: {
-    doc: 'What env to send component to in @amedia/create-component',
-    format: String,
-    default: 'disabled',
-    env: 'MANIFEST_ENV',
+    default: 'services.api.no',
+    env: 'SERVICES_HOSTNAME',
   },
 });
 

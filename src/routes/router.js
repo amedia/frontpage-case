@@ -1,10 +1,9 @@
 import express from 'express';
-import metrics from '@amedia/metrics';
 
 import logger from '../logger.js';
 // Import manifests
-import exampleView from '../views/example.view.js';
-import manifests from '../manifests/manifests.js';
+import preview from '../views/preview.view.js';
+import manifest from '../manifests/manifests.js';
 
 // Import Views
 
@@ -13,27 +12,30 @@ const router = express.Router();
 
 // Set up routes
 router.get(
-  '/example/manifest',
-  metrics.label('ego-top-manifest'),
+  '/manifest',
   (req, res) => {
-    logger.info('Somebody is running the example manifest!');
-    res.headerManager.addLocalGroup(`/example-manifest`);
-    res.headerManager.setLocalChannelMaxAge(86400);
-    res.headerManager.setLocalMaxAge(0);
-    return res.json(manifests.exampleManifest);
+    logger.info('Request /manifest route');
+    return res.json(manifest);
   }
 );
 
-router.get('/example/embed', metrics.label('foo'), (req, res) => {
-  logger.info('Somebody is running the example!');
-  // How long should this live in varnish cache
-  res.headerManager.setLocalChannelMaxAge(60);
-  // How long should this live in browser cache
-  res.headerManager.setLocalMaxAge(30);
+router.get('/component', (req, res) => {
+  logger.info('Request /component route');
   res.type('text/html');
-  const html = exampleView({ geeks: 'geeks' });
+
+  res.end('<amedia-frontpage> Her skal forsiden komme </amedia-frontpage>');
+});
+
+router.get('/preview', (req, res) => {
+  logger.info('Request /preview route');
+  res.type('text/html');
+
+  // Kan vi ha publication som en query param til routen?
+  const html = preview({ publication: 'www.dt.no' });
   res.end(html);
 });
+
+// Legg inn
 
 // Export application
 export default router;
