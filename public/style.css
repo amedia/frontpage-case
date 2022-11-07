@@ -1,0 +1,9 @@
+amedia-frontpage {
+  background: hotpink;
+  color: crimson;
+  display: block;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 3rem;
+  padding: 20vw 0;
+  text-align:center;
+}
