@@ -17,7 +17,7 @@ I filen [src/views/preview.view.js](src/views/preview.view.js) vil du se to [cus
 
 Den andre komponenten har manifestet [http://localhost:8080/frontpage-case/manifest](http://localhost:8080/frontpage-case/manifest). Hvis du ser i manifestet, ser du at det referes til urlTemplate og til css/js-filer. 
 
-`urlTemplate` er en url som leveres av denne serveren og som du kan finne definert i (src/routes/router.js)[src/routes/router.js]. 
+`urlTemplate` er en url som leveres av denne serveren og som du kan finne definert i [src/routes/router.js](src/routes/router.js). 
 
 Javascript og CSS-filen finner du i mappen `public`. 
 
