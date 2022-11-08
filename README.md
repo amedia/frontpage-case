@@ -27,8 +27,3 @@ Preview-routen i serveren skal endres slik at den tar publikasjonen (f.eks. www.
 
 Du bestemmer selv om du vil tegne ut forsiden serversidet eller clientsidet.
 
-
-_____
-
-
-Har du spørsmål, kan du sende en epost til [Tor Brekke Skjøtskift](mailto:tor.skjotskift@amedia.no) eller ringe 970 66 909.
