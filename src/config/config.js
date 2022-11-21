@@ -4,7 +4,12 @@ import fs from 'fs';
 
 import convict from 'convict';
 
-const pkgJSONPath = new URL('../../package.json', import.meta.url).pathname;
+let pkgJSONPath = new URL('../../package.json', import.meta.url).pathname;
+const isWin = process.platform === "win32";
+if(isWin) {
+  // remove leading / on windows
+  pkgJSONPath = pkgJSONPath.substring(1);
+}
 const pckage = JSON.parse(fs.readFileSync(pkgJSONPath, 'utf8'));
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
