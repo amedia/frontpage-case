@@ -19,11 +19,32 @@ Den andre komponenten har manifestet [http://localhost:8080/frontpage-case/manif
 
 `urlTemplate` er en url som leveres av denne serveren og som du kan finne definert i [src/routes/router.js](src/routes/router.js). 
 
-Javascript og CSS-filen finner du i mappen `public`. 
+Du finner en javascript og CSS-fil i mappen `public`. 
 
-Du skal nå endre denne komponenten slik at den henter de siste publiserte sakene på en publikasjon via [https://services.api.no/api/acpcomposer/v1.1/search/content/?publicationDomain=www.ba.no&sort=lastPublishedDate&types=story](https://services.api.no/api/acpcomposer/v1.1/search/content/?publicationDomain=www.ba.no&sort=lastPublishedDate&types=story) og tegner ut en forside med teasere. En teaser er bilde og tittel fra nyhetssakene med lenke til artikkelen. Her må du gå litt på jakt i responsen fra API-kallet. Du kan bruke bildet som ligger under `fields.versions.large` i JSON-objektet selv om bildet er litt stort.
+## Oppgaven
 
-Preview-routen i serveren skal endres slik at den tar publikasjonen (f.eks. www.ba.no) som query-parameter og lar deg dermed velge hvilken forside du skal se.
+Du skal utføre følgende i prioritert rekkefølge. Du kan installere de pakkene du ønsker og står fritt til å løse oppgaven slik du selv vil. Dette inkluderer at du kan velge å skrive om koden i dette caset om du ønsker det.
 
-Du bestemmer selv om du vil tegne ut forsiden serversidet eller clientsidet.
+1. Komponenten skal hente de siste publiserte sakene på en publikasjon via [https://services.api.no/api/acpcomposer/v1.1/search/content/?publicationDomain=www.ba.no&sort=lastPublishedDate&types=story](https://services.api.no/api/acpcomposer/v1.1/search/content/?publicationDomain=www.ba.no&sort=lastPublishedDate&types=story) og du skal tegne ut en forside med teasere. En teaser er bilde og tittel fra nyhetssakene med lenke til artikkelen. Her må du gå litt på jakt i responsen fra API-kallet. Du kan bruke bildet som ligger under `fields.versions.large` i JSON-objektet selv om bildet er litt stort. Du bestemmer selv om du vil tegne ut komponenten serversidet eller clientsidet, men vi vil gjerne at du forteller oss hvorfor du velger en serversidet eller klientsidet rendring.
 
+2. Filtrer bort alle teasere som ikke har bilde.
+
+3. Preview-routen i serveren skal endres slik at den tar publikasjonen (f.eks. www.ba.no) som query-parameter og lar deg dermed velge hvilken forside du skal se.
+
+## Design
+
+Vi ønsker at layouten skal se slik ut på store skjermer:
+
+<img src="large-sketch.png" alt="Stor skisse av komponenten" />
+
+...og slik på mindre skjermer:
+
+<img src="small-sketch.png" alt="liten skisse av komponenten" />
+
+ Breakpoints legges der layout brekker. Tross alt derfor det heter "breakpoints".
+
+ Maksbredde skal være 980px for innholdet. Du velger selv font, fontstørrelse, linjehøyde, padding etc.
+
+ ## Innlevering
+
+ Caset skal enten leveres som en pull request til dette repo'et, eller ved å sende oss en lenke til repo'et ditt.

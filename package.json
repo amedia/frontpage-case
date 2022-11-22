@@ -1,12 +1,11 @@
 {
   "name": "frontpage-case",
   "version": "1.0.0",
-  "private": true,
-  "description": "An initial start point for node.js based applications",
+  "description": "Case for Amedia Utvikling AS",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/amedia/template-node-app"
+    "url": "https://github.com/amedia/frontpage-case"
   },
   "license": "UNLICENSED",
   "author": "Amedia",
