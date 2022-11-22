@@ -35,11 +35,11 @@ Du skal utføre følgende i prioritert rekkefølge. Du kan installere de pakkene
 
 Vi ønsker at layouten skal se slik ut på store skjermer:
 
-<img src="large-sketch.png" alt="Stor skisse av komponenten" />
+<img width="320" src="large-sketch.png" alt="Stor skisse av komponenten" />
 
 ...og slik på mindre skjermer:
 
-<img src="small-sketch.png" alt="liten skisse av komponenten" />
+<img width="320" src="small-sketch.png" alt="liten skisse av komponenten" />
 
  Breakpoints legges der layout brekker. Tross alt derfor det heter "breakpoints".
 
