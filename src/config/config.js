@@ -5,8 +5,8 @@ import fs from 'fs';
 import convict from 'convict';
 
 let pkgJSONPath = new URL('../../package.json', import.meta.url).pathname;
-const isWin = process.platform === "win32";
-if(isWin) {
+const isWin = process.platform === 'win32';
+if (isWin) {
   // remove leading / on windows
   pkgJSONPath = pkgJSONPath.substring(1);
 }
