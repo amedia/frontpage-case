@@ -1,9 +1,37 @@
 amedia-frontpage {
-  background: hotpink;
+  background: white;
   color: crimson;
-  display: block;
-  font-family: 'Comic Sans MS', sans-serif;
-  font-size: 3rem;
-  padding: 20vw 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 16px;
   text-align:center;
+  max-width: 1440px;
+}
+
+.issueContent {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 2rem;
+    width: 500px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    width: 300px;
+}
+
+a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+img {
+    width: 300px;
 }

@@ -14,7 +14,7 @@
   "scripts": {
     "build": "echo \"Info: no build script specified\" && exit 0",
     "dev-start": "node --watch src/server.js",
-    "start": "node src/server.js",
+    "start": "nodemon src/server.js",
     "test": "echo \"Maybe add some tests?\""
   },
   "dependencies": {
@@ -25,5 +25,8 @@
     "express": "4.18.2",
     "pino": "8.7.0",
     "pino-pretty": "9.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
