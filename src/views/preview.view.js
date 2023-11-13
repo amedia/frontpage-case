@@ -10,7 +10,7 @@ export default function renderPreview({ publication }) {
     <html>
     <head>
         <title>Preview</title>
-        <script type="module" src="https://assets.acdn.no/pkg/@amedia/include/v3/include.js"></script>
+        <script type="module" src="https://assets.acdn.no/pkg/@amedia/component-include/v2/include.js"></script>
     </head>
     <body>
         <!-- Parameter til komponenten sendes inn som attributter med prefix param -->
