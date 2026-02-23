@@ -24,6 +24,6 @@
     "dnscache": "1.0.2",
     "express": "4.22.1",
     "pino": "8.7.0",
-    "pino-pretty": "9.1.1"
+    "pino-pretty": "13.1.3"
   }
 }
