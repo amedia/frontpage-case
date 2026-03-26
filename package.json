@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "compression": "1.8.1",
-    "convict": "6.2.4",
+    "convict": "6.2.5",
     "cors": "2.8.5",
     "dnscache": "1.0.2",
     "express": "4.22.1",
